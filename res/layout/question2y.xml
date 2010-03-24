@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+   <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dip"
+        android:layout_marginBottom="8dip"
+         android:textSize="18sp"
+        android:text="@string/q2y"
+    />
+    <Button android:id="@+id/giver_button"
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:textSize="20sp"
+        android:padding="20dip"
+        android:layout_marginBottom="8dip"
+        android:text="@string/giver">
+        <requestFocus />
+    </Button>
+     <Button android:id="@+id/taker_button"
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:textSize="20sp"
+        android:padding="20dip"
+        android:layout_marginBottom="8dip"
+        android:text="@string/taker">
+         <requestFocus />
+    </Button>
+</LinearLayout>

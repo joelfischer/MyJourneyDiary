@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/settings"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dip"
+        android:layout_marginBottom="8dip"
+        android:textSize="18sp"
+        android:text="@string/transport_prompt"
+    />
+    <Spinner 
+        android:id="@+id/spinner2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:prompt="@string/transport_prompt"
+    />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dip"
+        android:layout_marginBottom="8dip"
+        android:textSize="18sp"
+        android:text="@string/purpose_prompt"
+    />
+    <Spinner 
+        android:id="@+id/spinner1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:prompt="@string/purpose_prompt"
+    />
+    <Button android:id="@+id/next_button"
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="100dip"
+        android:textSize="15sp"
+        android:text="@string/next"
+        android:gravity="bottom">
+        <requestFocus />
+    </Button>
+</LinearLayout>

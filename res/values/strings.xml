@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">JourneyDiary</string>
+    <string name="location_list">List of Journeys</string>
+    <string name="journey_view">Past Journeys</string>
+    <string name="distance_prompt">Please choose the desired distance between locations to be recorded. The faster the vehicle and the further the journey, the more distance is recommended.</string>
+    <string-array name="distance_array">
+	    <item>5m</item> 
+	    <item>10m</item> 
+	    <item>20m</item> 
+	    <item>50m</item> 
+	    <item>100m</item> 
+	    <item>250m</item> 
+	    <item>500m</item> 
+	    <item>1,000m</item> 
+	    <item>2,000m</item> 
+	    <item>5,000m</item> 
+	    <item>10,000m</item> 
+    </string-array>
+    <string name="transport_prompt">Please pick transport mode.</string>
+    <string-array name="transport_array">
+    	<item>--</item> 
+	    <item>walking</item> 
+	    <item>cycling</item> 
+	    <item>bus</item>
+	    <item>car</item> 
+	    <item>taxi</item> 
+	    <item>train</item> 
+	    <item>tram</item> 
+	    <item>other</item> 
+    </string-array>
+    <string name="purpose_prompt">What is the purpose of this journey?</string>
+    <string-array name="purpose_array">
+    	<item>--</item> 
+	    <item>work to home</item> 
+	    <item>home to work</item> 
+	    <item>during work</item>
+	    <item>leisure</item> 
+	    <item>family care</item> 
+	    <item>school run</item> 
+	    <item>other</item> 
+    </string-array>
+    <string name="comment_str">Do you want to leave a comment alongside this journey?</string>
+    <string name="start">Start Recording >></string>
+    <string name="settings_view">Settings</string>
+    <string name="next">Next >></string>
+    <string name="stats_view">Journey details</string>
+    <string name="choose_q">When are you willing to provide more information on the journey you are about to take?</string>
+    <string name="now">Now</string>
+    <string name="later">After the journey</string>
+    <string name="q1">Will you share this journey?</string>
+    <string name="q1_e">Did you share this journey?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="maybe">Maybe</string>
+    <string name="q2y">What will/would your role be?</string>
+    <string name="q2y_e">What was your role/would your role have been?</string>
+    <string name="giver">Driver</string>
+    <string name="taker">Passenger</string>
+    <string name="q2n">Would you be willing to car share for this journey?</string>
+    <string name="q2n_e">Would you have been willing to car share for this journey?</string>
+    <string name="reasons_prompt">Please offer your reasons.</string>
+    <string name="motives_prompt">Why would you be happy to share your journey?</string>
+    <string name="motives_prompt_e">Why were you happy to share your journey?</string>
+    <string name="q1_view">Question 1/3</string>
+    <string name="q2_view">Question 2/3</string>
+    <string name="q3_view">Question 3/3</string>
+	<string name="chooseq_view">Questions</string>
+	<string name="reminders">Reminders</string>
+	<string name="done">Done</string>
+	<string name="export">Export this data to sdcard</string>
+	<string name="app_reminder">Please use the MyJourneyDiary app today</string>
+	<string name="app_reminder_label">MyJourneyDiary</string>
+	<string name="diary_reminder">Please complete your online diary today</string>
+	<string name="diary_reminder_label">Diary reminder</string>
+	<string name="questionnaire_view">Questionnaire</string>
+	<string name="remote_service_started">Recording journey...</string>
+	<string name="remote_service_label">Currently recording journey</string>
+</resources>

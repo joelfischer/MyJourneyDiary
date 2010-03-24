@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/settings"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+   <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dip"
+         android:textSize="18sp"
+        android:text="@string/distance_prompt"
+    />
+    <Spinner 
+        android:id="@+id/spinner1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:prompt="@string/distance_prompt"
+    />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:text="@string/transport_prompt"
+    />
+    <Spinner 
+        android:id="@+id/spinner2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:prompt="@string/transport_prompt"
+    />
+   <TextView
+    	android:id="@+id/comment"
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:paddingTop="20px"
+        android:textSize="15sp"
+        android:text="@string/comment_str"/>
+	<EditText
+		android:id="@+id/entry"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_weight="1"
+        android:singleLine="true"
+        />
+    <Button android:id="@+id/next_button"
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:textSize="15sp"
+        android:text="@string/next">
+        <requestFocus />
+    </Button>
+</LinearLayout>

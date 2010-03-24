@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- @author: jef@cs.nott.ac.uk -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="ac.uk.notts.mrl.MyJourneyDiary"
+      android:versionCode="1"
+      android:versionName="1.0">
+    <application android:icon="@drawable/journey_diary_icon_bold" android:label="@string/app_name">
+    <uses-library android:name="com.google.android.maps" />
+    
+        <activity android:name=".OverviewMap"
+       			  android:screenOrientation="portrait"
+                  android:label="@string/app_name"
+                  android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name=".LocationListView"
+                  android:label="@string/location_list">
+        </activity>
+         <activity android:name=".HistoricJourneyView"
+                  android:label="@string/journey_view">
+        </activity>
+        <activity android:name=".SettingsActivity"
+                  android:label="@string/settings_view">
+        </activity>
+        <activity android:name=".StatsActivity"
+                  android:label="@string/stats_view">
+        </activity>
+        <activity android:name=".ChooseQ"
+                  android:label="@string/chooseq_view">
+        </activity>
+        <activity android:name=".Question1"
+                  android:label="@string/q1_view">
+        </activity>
+        <activity android:name=".Question2n"
+                  android:label="@string/q2_view">
+        </activity>
+        <activity android:name=".Question2y"
+                  android:label="@string/q2_view">
+        </activity>
+        <activity android:name=".Question3reasons"
+                  android:label="@string/q3_view">
+        </activity>
+    	<activity android:name=".Question3"
+                  android:label="@string/q3_view">
+        </activity>
+        <activity android:name=".SetReminders"
+                  android:label="@string/reminders">
+        </activity>
+        <activity android:name=".Question1E"
+                  android:label="@string/q1_view">
+        </activity>
+        <activity android:name=".Question2nE"
+                  android:label="@string/q2_view">
+        </activity>
+        <activity android:name=".Question2yE"
+                  android:label="@string/q2_view">
+        </activity>
+        <activity android:name=".Question3reasonsE"
+                  android:label="@string/q3_view">
+        </activity>
+    	<activity android:name=".Question3E"
+                  android:label="@string/q3_view">
+        </activity>
+        
+        <activity android:name=".OnlineQuestionnaire" android:label="@string/questionnaire_view"
+     	android:theme="@android:style/Theme.NoTitleBar"/>
+        
+        <service android:name=".ReminderSchedulerService" android:process=":remote" />
+        
+        <receiver android:name=".Reminder_BroadcastReceiver" android:enabled="true"/>    
+        
+        <receiver android:name=".StartingEvent_BroadcastReceiver" android:enabled="true">
+           <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>       
+        </receiver>   
+        
+        <service android:name=".RemoteService" android:process=":remote">
+            <intent-filter>
+                <!-- interface supported by the service, which
+                     you can bind to. -->
+                <action android:name="ac.uk.notts.mrl.MyJourneyDiary.IRemoteService" />
+                <!-- This is an action code you can use to select the service
+                     without explicitly supplying the implementation class. -->
+                <action android:name="ac.uk.notts.mrl.MyJourneyDiary.REMOTE_SERVICE" />
+            </intent-filter>
+        </service>
+	
+    </application>
+    <uses-sdk android:minSdkVersion="4" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    
+</manifest> 
