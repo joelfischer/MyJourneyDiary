@@ -1,0 +1,11 @@
+== MyJourneyDiary
+
+MyJourneyDiary is an app for Android that lets your record your journeys, i.e. your GPS coordinates over time, and let's you view and export your past journeys as .kml. It includes some questions specific to the diary study for the Horizon Car Share project it was developed for. 
+
+== Software Requirements
+
+  Android SDK release 1.6
+
+== Credits
+
+Copyright (C) Joel Fischer <jef@cs.nott.ac.uk>, 2010, for the Horizon Car Share Project 
